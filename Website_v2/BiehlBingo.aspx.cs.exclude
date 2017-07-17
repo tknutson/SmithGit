@@ -1,0 +1,27 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using WebsiteManagement;
+
+public partial class BiehlBingo : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        var dbMgr = new DatabaseManager();
+
+        try
+        {
+            var bingoInfoList = dbMgr.getBingoInfo();
+
+            bingoInfo.DataSource = bingoInfoList;
+            bingoInfo.DataBind();
+        }
+        catch (Exception Ex)
+        {
+            throw new Exception(Ex.Message + "\r\n" + Ex.StackTrace);
+        }
+    }
+}

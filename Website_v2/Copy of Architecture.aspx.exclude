@@ -1,0 +1,44 @@
+﻿<%@ Page Title="Architecture" Language="C#" MasterPageFile="~/Shared/Site.master" AutoEventWireup="true"
+    CodeFile="Copy of Architecture.aspx.cs" Inherits="Architecture" %>
+
+<asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
+    <%--<title>Choose A Category</title>--%>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Choose A Category, WOW Slider, Web Sliders, Javascript Photo Slider" />
+	<meta name="description" content="Choose A Category created with WOW Slider, a free wizard program that helps you easily generate beautiful web slideshow" />
+	<!-- Start WOWSlider.com HEAD section -->
+	<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+	<script type="text/javascript" src="engine1/jquery.js"></script>
+	<!-- End WOWSlider.com HEAD section -->
+</asp:Content>
+<asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
+	<!-- Start WOWSlider.com BODY section -->
+	<div id="wowslider-container1">
+	    <div class="ws_images">
+            <ul>
+                <asp:Repeater runat="server" ID="photoInfo">
+                    <ItemTemplate>
+                        <li>
+                            <a onclick='window.open("/<%# DataBinder.Eval(Container.DataItem, "photoFileLocation") %><%# DataBinder.Eval(Container.DataItem, "photoFileName") %>","_blank","scrollbars=no,width=420,height=620");'>
+                                <img src="/<%# DataBinder.Eval(Container.DataItem, "photoFileLocation") %><%# DataBinder.Eval(Container.DataItem, "photoFileName") %>" alt="<%# DataBinder.Eval(Container.DataItem, "photoDescription") %>" title="<%# DataBinder.Eval(Container.DataItem, "photoDescription") %>" id='<%# DataBinder.Eval(Container.DataItem, "photoId") %>' />
+                            </a>
+                        </li>
+                    </ItemTemplate>
+                </asp:Repeater>
+            </ul>
+	    </div>
+        <div class="ws_thumbs">
+            <div>
+                <asp:Repeater runat="server" ID="photoInfo_thumbs">
+                    <ItemTemplate>
+                        <a href="#" title="<%# DataBinder.Eval(Container.DataItem, "photoName") %>"><img src="<%# DataBinder.Eval(Container.DataItem, "photoFileLocation") %>thumbs/<%# DataBinder.Eval(Container.DataItem, "photoFileName") %>" alt="" /></a>
+                    </ItemTemplate>
+                </asp:Repeater>
+            </div>
+        </div>
+	    <div class="ws_shadow"></div>
+	</div>
+	<script type="text/javascript" src="engine1/wowslider.js"></script>
+	<script type="text/javascript" src="engine1/script.js"></script>
+	<!-- End WOWSlider.com BODY section -->
+</asp:Content>

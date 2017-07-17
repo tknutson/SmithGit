@@ -1,0 +1,5 @@
+List all Photo Names in CategoryInfo table:
+
+SELECT pi.`file_name`, pcd.`photo_id` FROM `photoCategoryDetails` pcd
+JOIN `photoInfo` pi ON pi.`photo_id` = pcd.`photo_id`
+ORDER BY 1

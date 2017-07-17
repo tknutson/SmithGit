@@ -1,0 +1,57 @@
+﻿#MainHeader {
+    font-family: "Courier New", Courier, monospace;
+	font-size: 36px;
+    color: black;
+    text-align: center;
+}
+
+#footer {
+	/*height: 100px; 
+    width:100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;*/ 
+    color: black;
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+}
+
+#footer a {
+    margin-right: 20px;
+}
+
+html,body{
+    height: 100%;
+}
+
+#holder{
+    min-height: 100%;
+    position:relative;
+}
+
+#menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+    margin-left: 1em;
+    font-family: "Courier New", Courier, monospace;
+}
+
+#menu a {
+    display: block;
+    width: auto;
+}
+
+#menu li {
+    position: relative;
+    margin-bottom: 1em;    
+    margin-left: 1px;
+}
+
+nav {
+    float: left;
+    margin-left: 1em;
+    font-family: "Courier New", Courier, monospace;
+    border: 1px solid black;
+}

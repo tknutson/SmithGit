@@ -1,0 +1,8 @@
+C:\SmithPix\SmithPixManagementApp\bin\Debug\SmithPixManagementApp.exe.config
+C:\SmithPix\SmithPixManagementApp\bin\Debug\SmithPixManagementApp.exe
+C:\SmithPix\SmithPixManagementApp\bin\Debug\SmithPixManagementApp.pdb
+C:\SmithPix\SmithPixManagementApp\obj\Debug\SmithPixManagementApp.Form1.resources
+C:\SmithPix\SmithPixManagementApp\obj\Debug\SmithPixManagementApp.Properties.Resources.resources
+C:\SmithPix\SmithPixManagementApp\obj\Debug\SmithPixManagementApp.csproj.GenerateResource.Cache
+C:\SmithPix\SmithPixManagementApp\obj\Debug\SmithPixManagementApp.exe
+C:\SmithPix\SmithPixManagementApp\obj\Debug\SmithPixManagementApp.pdb

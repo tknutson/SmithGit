@@ -1,0 +1,12 @@
+C:\SmithPix\WebsiteManagement\bin\Debug\WebsiteManagement.dll
+C:\SmithPix\WebsiteManagement\bin\Debug\WebsiteManagement.pdb
+C:\SmithPix\WebsiteManagement\obj\Debug\WebsiteManagement.dll
+C:\SmithPix\WebsiteManagement\obj\Debug\WebsiteManagement.pdb
+C:\smithpix\Website_v2\WebsiteManagement\bin\Debug\WebsiteManagement.dll
+C:\smithpix\Website_v2\WebsiteManagement\bin\Debug\WebsiteManagement.pdb
+C:\smithpix\Website_v2\WebsiteManagement\bin\Debug\MySql.Data.dll
+C:\smithpix\Website_v2\WebsiteManagement\obj\Debug\WebsiteManagement.csprojResolveAssemblyReference.cache
+C:\smithpix\Website_v2\WebsiteManagement\obj\Debug\WebsiteManagement.dll
+C:\smithpix\Website_v2\WebsiteManagement\obj\Debug\WebsiteManagement.pdb
+C:\SmithPix\WebsiteManagement\bin\Debug\WebsiteManagement.dll.config
+C:\SmithPix\WebsiteManagement\obj\Debug\WebsiteManagement.csprojResolveAssemblyReference.cache

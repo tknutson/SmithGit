@@ -1,0 +1,12 @@
+﻿<%@ Page Title="Bingo" Language="C#" AutoEventWireup="true" CodeFile="BiehlBingo.aspx.cs" MasterPageFile="Shared/Site.master" Inherits="BiehlBingo" %>
+
+<asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
+</asp:Content>
+<asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
+    <asp:DataGrid runat="server" ID="bingoInfo">
+        <Columns>
+            <asp:BoundColumn HeaderText="B" DataField="description" />
+        </Columns>
+    </asp:DataGrid>
+    <asp:Table runat="server" ID="bingoInfoTable"></asp:Table>
+</asp:Content>

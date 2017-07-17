@@ -1,0 +1,21 @@
+﻿<%@ Page Title="Close Ups" Language="C#" MasterPageFile="Shared/Site.master" AutoEventWireup="true"
+    CodeFile="CloseUps.aspx.cs" Inherits="CloseUps" %>
+
+<asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
+</asp:Content>
+<asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
+    <asp:Repeater runat="server" ID="photoInfo">
+        <ItemTemplate>
+            <li>
+                <a href="#">
+                    <img src="<%# DataBinder.Eval(Container.DataItem, "photoFileLocation") %>thumbs/<%# DataBinder.Eval(Container.DataItem, "photoFileName") %>" 
+                        alt="<%# DataBinder.Eval(Container.DataItem, "photoDescription") %>" 
+                        title="<%# DataBinder.Eval(Container.DataItem, "photoDescription") %>" 
+                        data-description="<%# DataBinder.Eval(Container.DataItem, "photoDescription") %>"
+                        data-large="<%# DataBinder.Eval(Container.DataItem, "photoFileLocation") %><%# DataBinder.Eval(Container.DataItem, "photoFileName") %>"
+                    />
+                </a>
+            </li>
+        </ItemTemplate>
+    </asp:Repeater>    
+</asp:Content>
